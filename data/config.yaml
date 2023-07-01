@@ -1,6 +1,6 @@
 name: I083
 enableToc: true
-openToc: true
+openToc: flase
 enableLinkPreview: true
 enableLatex: true
 enableCodeBlockTitle: true

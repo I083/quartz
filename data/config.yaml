@@ -12,6 +12,9 @@ enableContextualBacklinks: true
 enableRecentNotes: true
 enableGitHubEdit: true
 enableMermaid: true
+created: true
+updated: true
+publish: true
 GitHubLink: https://github.com/I083/quartz/tree/hugo/content
 search:
   enableSemanticSearch: false

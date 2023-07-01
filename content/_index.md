@@ -1,9 +1,5 @@
 ---
-title: "StartPage"
-created: 2022-03-25T15:18:47+09:00
-updated: 2023-02-22T01:36:20+09:00
-publish: false
-tags: Resource/Workspace
+title: StartPage
 ---
 
 # 1. Rule

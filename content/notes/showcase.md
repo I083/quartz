@@ -1,23 +1,16 @@
 ---
-title: "Showcase"
+title: Test
 ---
 
-Want to see what Quartz can do? Here are some cool community gardens :)
+# 1. Rule
+1. 자본주의에서 자유는 자본을 통해 이루어진다.
+	1. 자본주의란 자본이 지배하는 사회다.
+		1. 사회는 신체, 시간의 결합이다.
+	2. 즉, 자본주의는 인간의 신체와 시간을 지배한다.
+	3. 따라서 인간이 자유롭기 위해서는 자본을 통제해야한다.
+2. Less is more
+3. **You can’t have your cake and eat it too**
+4. ==Value is relative==
 
-- [Quartz Documentation (this site!)](https://quartz.jzhao.xyz/)
-- [Jacky Zhao's Garden](https://jzhao.xyz/)
-- [Scaling Synthesis - A hypertext research notebook](https://scalingsynthesis.com/)
-- [AWAGMI Intern Notes](https://notes.awagmi.xyz/)
-- [Shihyu's PKM](https://shihyuho.github.io/pkm/)
-- [SlRvb's Site](https://slrvb.github.io/Site/)
-- [Course notes for Information Technology Advanced Theory](https://a2itnotes.github.io/quartz/)
-- [Brandon Boswell's Garden](https://brandonkboswell.com)
-- [Siyang's Courtyard](https://siyangsun.github.io/courtyard/)
-- [Data Dictionary 🧠](https://glossary.airbyte.com/)
-- [sspaeti.com's Second Brain](https://brain.sspaeti.com/)
-- [oldwinterの数字花园](https://garden.oldwinter.top/)
-- [SethMB Work](https://sethmb.xyz/)
-- [Abhijeet's Math Wiki](https://abhmul.github.io/quartz/Math-Wiki/)
-- [Mike's AI Garden 🤖🪴](https://mwalton.me/)
-
-If you want to see your own on here, submit a [Pull Request adding yourself to this file](https://github.com/jackyzha0/quartz/blob/hugo/content/notes/showcase.md)!
+# References
+test

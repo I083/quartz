@@ -1,7 +1,7 @@
 <header>
   {{ $config := cond (eq $.Site.Language.Lang "en") "config" (printf "config.%s" $.Site.Language.Lang) }}
   <a class="root-logo" href="{{ .Site.BaseURL }}">
-    <img src="/static/header.png" alt="Mar">
+    <img src="./static/header.png" alt="Mar">
   </a>
   <div class="spacer"></div>
   <div id="search-icon">

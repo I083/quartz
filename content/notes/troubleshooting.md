@@ -3,7 +3,8 @@ title: Test
 created: 2023-06-29T18:51:54+09:00
 updated: 
 publish: true
-tags: Resource/Workspace
+tags:
+- Resource/Workspace
 ---
 
 # 1. aaa

@@ -1,5 +1,6 @@
 ---
-title: "StartPage"
+title: StartPage
+openToc: true
 ---
 
 # 1. Rule

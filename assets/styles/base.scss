@@ -45,15 +45,16 @@ h1, h2, h3, h4, h5, h6, thead {
   font-weight: revert;
   margin: 2rem 0 0;
   padding: 2rem auto 1rem;
-
+/*
   &:hover > .hanchor {
     color: var(--secondary);
   }
+*/
 }
 
 .hanchor {
   font-family: var(--font-header);
-  opacity: 0.8;
+  opacity: none;
   transition: color 0.3s ease;
   color: var(--dark);
 }
@@ -93,28 +94,70 @@ tbody, li, p {
   counter-reset: section;
   margin-left: 0;
   padding-left: 1.5em;
+
   & > li {
     counter-increment: section;
+    &::marker {
+      content: none;
+    }
     & > ol {
       counter-reset: subsection;
       & > li {
         counter-increment: subsection;
         &::marker {
-          content: counter(section) "." counter(subsection) "  ";
+          content: none;
+        }
+        & > ol {
+          counter-reset: subsubsection;
+          & > li {
+            counter-increment: subsubsection;
+            &::marker {
+              content: none;
+            }
+            & > ol {
+              counter-reset: subsubsubsection;
+              & > li {
+                counter-increment: subsubsubsection;
+                &::marker {
+                  content: none;
+                }
+                & > ol {
+                  counter-reset: subsubsubsubsection;
+                  & > li {
+                    counter-increment: subsubsubsubsection;
+                    &::marker {
+                      content: none;
+                    }
+                    & > ol {
+                      counter-reset: subsubsubsubsubsection;
+                      & > li {
+                        counter-increment: subsubsubsubsubsection;
+                        &::marker {
+                          content: none;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
   }
 
-  & > li::marker {
-    content: counter(section) "  ";
-  }
-
-  & > li::marker, & > li > ol > li::marker {
+  & > li::marker,
+  & > li > ol > li::marker,
+  & > li > ol > li > ol > li::marker,
+  & > li > ol > li > ol > li > ol > li::marker,
+  & > li > ol > li > ol > li > ol > li > ol > li::marker,
+  & > li > ol > li > ol > li > ol > li > ol > li > ol > li::marker {
     font-family: var(--font-body);
     font-weight: 700;
   }
 }
+
 
 table {
   border: 1px solid var(--outlinegray);

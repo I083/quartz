@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6, thead {
   font-weight: 500;
   margin: 2rem 0 0;
   padding: 2rem auto 1rem;
+  font-size: 1.4em;
 /*
   &:hover > .hanchor {
     color: var(--secondary);
@@ -109,45 +110,61 @@ tbody, li, p {
   margin-left: 0;
   padding-left: 1.5em;
 
-  & > li {
+  li {
     counter-increment: section;
-    &::marker {
-      content: none;
+    a {
+      text-decoration: none;
+      color: #8E8E93;
     }
-    & > ol {
+
+    ol {
       counter-reset: subsection;
-      & > li {
+
+      li {
         counter-increment: subsection;
-        &::marker {
-          content: none;
+        a {
+          text-decoration: none;
+          color: #8E8E93;
         }
-        & > ol {
+
+        ol {
           counter-reset: subsubsection;
-          & > li {
+
+          li {
             counter-increment: subsubsection;
-            &::marker {
-              content: none;
+            a {
+              text-decoration: none;
+              color: #8E8E93;
             }
-            & > ol {
+
+            ol {
               counter-reset: subsubsubsection;
-              & > li {
+
+              li {
                 counter-increment: subsubsubsection;
-                &::marker {
-                  content: none;
+                a {
+                  text-decoration: none;
+                  color: #8E8E93;
                 }
-                & > ol {
+
+                ol {
                   counter-reset: subsubsubsubsection;
-                  & > li {
+
+                  li {
                     counter-increment: subsubsubsubsection;
-                    &::marker {
-                      content: none;
+                    a {
+                      text-decoration: none;
+                      color: #8E8E93;
                     }
-                    & > ol {
+
+                    ol {
                       counter-reset: subsubsubsubsubsection;
-                      & > li {
+
+                      li {
                         counter-increment: subsubsubsubsubsection;
-                        &::marker {
-                          content: none;
+                        a {
+                          text-decoration: none;
+                          color: #8E8E93;
                         }
                       }
                     }
@@ -161,16 +178,14 @@ tbody, li, p {
     }
   }
 
-  & > li::marker,
-  & > li > ol > li::marker,
-  & > li > ol > li > ol > li::marker,
-  & > li > ol > li > ol > li > ol > li::marker,
-  & > li > ol > li > ol > li > ol > li > ol > li::marker,
-  & > li > ol > li > ol > li > ol > li > ol > li > ol > li::marker {
+  li::marker {
+    content: none;
     font-family: var(--font-body);
     font-weight: 500;
   }
 }
+
+
 
 
 table {

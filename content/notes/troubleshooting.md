@@ -8,7 +8,7 @@ tags:
 ---
 
 # 1. aaa
-text
+text[^1]
 **bold**
 dsfas**fassdfadahf==ioasdkvn==asdlfuyawen**fjaskdlf
 
@@ -54,3 +54,6 @@ sdfsdfsdf
 ###### 3.1.1.1.1.1. 6
 # 4. fsdf
  sdfsdf
+
+# References
+[^1]: [ai](https://chat.openai.com/)

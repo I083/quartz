@@ -1,8 +1,10 @@
 // Replace this with your own font imports!
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
 :root {
-  --font-body: "Source Sans Pro";
-  --font-header: "Inter";
+  --font-body: "Spoqa Han Sans Neo";
+  --font-header: "Spoqa Han Sans Neo";
   --font-mono: "Fira Code"
 }
 
@@ -41,8 +43,8 @@ body {
 
 h1, h2, h3, h4, h5, h6, thead {
   font-family: var(--font-header);
-  color: var(--dark);
-  font-weight: revert;
+  color: var(--heading) !important;
+  font-weight: 500;
   margin: 2rem 0 0;
   padding: 2rem auto 1rem;
 /*
@@ -57,15 +59,26 @@ h1, h2, h3, h4, h5, h6, thead {
   opacity: none;
   transition: color 0.3s ease;
   color: var(--dark);
+  text-decoration: none !important;
+}
+
+.heading {
+  text-decoration: none !important;
+  font-weight: bold;
+  /* 원하는 스타일 속성과 값들을 추가하세요 */
 }
 
 p, ul, text, a, tr, td, li, ol, ul {
   font-family: var(--font-body);
   color: var(--gray);
   fill: var(--gray);
-  font-weight: revert;
-  margin: revert;
+  font-weight: 500;
+  margin-top: .7em;
   padding: revert;
+}
+
+ol li::marker {
+  color: var(--heading);
 }
 
 tbody, li, p {
@@ -80,8 +93,8 @@ tbody, li, p {
     & summary {
       cursor: zoom-in;
       font-family: var(--font-header);
-      color: var(--dark);
-      font-weight: 700;
+      color: var(--gray);
+      font-weight: 500;
     }
 
     &[open] summary {
@@ -154,7 +167,7 @@ tbody, li, p {
   & > li > ol > li > ol > li > ol > li > ol > li::marker,
   & > li > ol > li > ol > li > ol > li > ol > li > ol > li::marker {
     font-family: var(--font-body);
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
@@ -235,11 +248,15 @@ article {
   }
 
   & a {
-    font-weight: 600;
+    color: var(--dark);
+    text-decoration: underline;
+    font-weight: 500;
 
     &.internal-link {
-      text-decoration: none;
-      background-color: transparentize(#8f9fa9, 0.85);
+      font-weight: 500;
+      color: var(--dark);
+      text-decoration: underline;
+      /*background-color: transparentize(#8f9fa9, 0.85);*/
       padding: 0 0.1em;
       margin: auto -0.1em;
       border-radius: 3px;
@@ -288,7 +305,7 @@ article {
 }
 
 .backlinks a {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.9rem;
 }
 
@@ -301,12 +318,13 @@ sup > a {
   margin: 0;
   & > a {
     font-family: var(--font-header);
+    color: var(--primary);
   }
 }
 
 a {
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
   transition: all 0.2s ease;
   color: var(--secondary);
@@ -417,6 +435,7 @@ header {
     }
   }
 
+
   #search-icon {
     background-color: var(--lightgray);
     border-radius: 4px;
@@ -425,8 +444,10 @@ header {
     align-items: center;
     cursor: pointer;
     & > p {
+      color: var(--visited);
+      font-weight: 500;
       display: inline;
-      padding: 0 1.5em 0 2em;
+      padding: .3em .1em .1em 1.1em;
     }
   }
 
@@ -441,7 +462,7 @@ header {
     }
 
     .search-path {
-      stroke: var(--gray);
+      stroke: var(--visited);
       stroke-width: 2px;
       transition: stroke 0.5s ease;
     }
@@ -482,7 +503,7 @@ header {
       box-sizing: border-box;
       padding: 0.5em 1em;
       font-family: var(--font-body);
-      color: var(--dark);
+      color: var(--primary);
       font-size: 1.1em;
       border: 1px solid var(--outlinegray);
 
@@ -535,9 +556,10 @@ header {
 }
 
 .search-highlight {
-  background-color: #afbfc966;
+  background-color: var(--highlighted);
   padding: 0.05em 0.2em;
   border-radius: 3px;
+  color: var(--primary)
 }
 
 .section-ul {
@@ -561,7 +583,7 @@ header {
     }
 
     & h3 > a {
-      font-weight: 700;
+      font-weight: 500;
       margin: 0;
     }
 
@@ -574,7 +596,7 @@ header {
 
   & h3 {
     opacity: 1;
-    font-weight: 700;
+    font-weight: 500;
     margin: 0;
   }
 
@@ -645,7 +667,7 @@ header {
 
   & > p, & > a {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     user-select: none;
   }
 }
@@ -664,5 +686,11 @@ header {
 
 mark {
   background-color: var(--highlighted);
-  color: var(--gray);
+  color: var(--primary);
+  font-weight: 500;
+}
+
+strong {
+  font-weight: 500;
+  color: var(--primary);
 }

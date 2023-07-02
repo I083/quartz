@@ -63,9 +63,10 @@ h1, h2, h3, h4, h5, h6, thead {
 }
 
 .heading {
+  /*header and tag, remove underline*/
   text-decoration: none !important;
   font-weight: bold;
-  /* 원하는 스타일 속성과 값들을 추가하세요 */
+  color: var(--outlinegray);
 }
 
 p, ul, text, a, tr, td, li, ol, ul {
@@ -566,7 +567,6 @@ header {
   list-style: none;
   margin-top: 2em;
   padding-left: 0;
-
 }
 
 .section-li {
